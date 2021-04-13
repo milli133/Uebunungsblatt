@@ -9,8 +9,9 @@ public class EinwohnerManager {
     ArrayList<Einwohner> einwohner = new ArrayList<>();
 
     public void load(String path) throws DataFileException, FileNotFoundException {
-        File file = new File(path);
-        FileReader fr = new FileReader(file);
+
+        FileReader fr = new FileReader(new File(path));
+
         try {
             BufferedReader br = new BufferedReader(fr);
 
